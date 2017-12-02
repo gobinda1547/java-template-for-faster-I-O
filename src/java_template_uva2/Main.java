@@ -1,4 +1,4 @@
-package java_template_for_codeforces;
+package java_template_uva2;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -13,7 +13,25 @@ public class Main {
 
 		public static void solve(MyScanner in, MyWriter out) throws IOException {
 
-			System.out.println("done");
+			String str;
+
+			while ((str = in.next()) != null) {
+				int x = Integer.parseInt(str);
+				int[][] arr = new int[x][x];
+				for (int i = 0; i < x; i++) {
+					for (int j = 0; j < x; j++) {
+						arr[i][j] = Integer.parseInt(in.next());
+					}
+				}
+				for (int i = 0; i < x; i++) {
+					for (int j = 0; j < x; j++) {
+						out.print(arr[i][j] + " ");
+					}
+					out.println();
+				}
+
+			}
+
 		}
 	}
 
@@ -63,22 +81,10 @@ public class Main {
 			return st.nextToken();
 		}
 
-		public int nextInt() {
-			return Integer.parseInt(next());
-		}
-
-		public long nextLong() {
-			return Long.parseLong(next());
-		}
-
-		public double nextDouble() {
-			return Double.parseDouble(next());
-		}
-
 		public String nextLine() {
 			try {
 				return br.readLine();
-			} catch (Exception e) {
+			} catch (IOException e) {
 				e.printStackTrace();
 			}
 			return null;
