@@ -30,6 +30,8 @@ public class Main {
 				System.out.println(ans2);
 			}
 
+			
+			System.exit(0);
 		}
 
 		public String readLine() {

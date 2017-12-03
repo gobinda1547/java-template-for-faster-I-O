@@ -14,7 +14,6 @@ public class Main {
 		public static void solve(MyScanner in, MyWriter out) throws IOException {
 
 			String str;
-
 			while ((str = in.next()) != null) {
 				int x = Integer.parseInt(str);
 				int[][] arr = new int[x][x];
@@ -31,6 +30,7 @@ public class Main {
 				}
 
 			}
+			System.exit(0);
 
 		}
 	}
