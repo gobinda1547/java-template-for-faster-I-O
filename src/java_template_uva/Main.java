@@ -21,16 +21,14 @@ public class Main {
 
 			while ((input = readLine()) != null) {
 				stringTokenizer = new StringTokenizer(input);
-				double a = Double.parseDouble(stringTokenizer.nextToken());
-				stringTokenizer = new StringTokenizer(readLine());
-				double b = Double.parseDouble(stringTokenizer.nextToken());
+				int a = Integer.parseInt(stringTokenizer.nextToken());
+				int b = Integer.parseInt(stringTokenizer.nextToken());
 
-				double ans = Math.pow(b, 1.0 / a);
-				String ans2 = String.format("%.0f", ans);
-				System.out.println(ans2);
+				if (a == 0 && b == 0)
+					break;
+
 			}
 
-			
 			System.exit(0);
 		}
 
