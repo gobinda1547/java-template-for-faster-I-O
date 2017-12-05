@@ -13,8 +13,11 @@ public class Main {
 
 		public static void solve(MyScanner in, MyWriter out) throws IOException {
 
-			System.out.println("done");
+			int x = in.nextInt();
+			System.out.println(x);
+
 		}
+
 	}
 
 	public static void main(String[] arg) {
